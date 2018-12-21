@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import com.customer.microservices.config.CustomerServiceProducer;
 import com.customer.microservices.domain.Customer;
 import com.customer.microservices.repository.CustomerRepository;
 
@@ -22,6 +23,8 @@ public class CustomerController {
 	
 	@Autowired
 	CustomerRepository customerRepository;
+	@Autowired
+	CustomerServiceProducer customerServiceProducerEvent;
 
     @GetMapping("/service1/customers")
     public List<Customer> snippets() {
@@ -43,6 +46,8 @@ public class CustomerController {
                 .fromCurrentRequest().path("/" + _customer.getId())
                 .buildAndExpand().toUri());
 
+       
+        customerServiceProducerEvent.createCustomerEvent(_customer);
         return new ResponseEntity<>(_customer, httpHeaders, HttpStatus.CREATED);
     }
 }

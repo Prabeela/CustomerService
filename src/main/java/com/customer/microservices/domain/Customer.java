@@ -1,10 +1,12 @@
 package com.customer.microservices.domain;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Customer {
+public class Customer implements Serializable {
 
 	private String id;
+	
 	private String email;
     private String first_name;
     private String last_name;
@@ -61,6 +63,12 @@ public class Customer {
 		this.modified = modified;
 	}
 	
+	@Override
+	public String toString() {
+		return "Customer [id=" + id + ", email=" + email + ", first_name=" + first_name + ", last_name=" + last_name
+				+ ", created=" + created + ", modified=" + modified + "]";
+	}
+
 	
 
 }

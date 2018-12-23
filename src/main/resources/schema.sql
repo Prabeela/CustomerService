@@ -1,6 +1,6 @@
-DROP TABLE IF EXISTS customer-541455
+DROP TABLE IF EXISTS customer;
 
-CREATE TABLE customer-541455
+CREATE TABLE customer
 (
     id varchar(36) NOT NULL,
     email varchar(200) NOT NULL,

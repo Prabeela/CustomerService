@@ -1,5 +1,19 @@
 server:
   port: 8787
+  
 spring:
   application:
     name: customer-service-541455
+    
+security:
+  basic:
+    enabled: false # turn off securing our application endpoints
+
+management:
+  security:
+    enabled: false
+    
+logging: # <----New sections below
+  level:
+    com:
+      microservices: DEBUG

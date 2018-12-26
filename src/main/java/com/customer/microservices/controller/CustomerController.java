@@ -48,6 +48,7 @@ public class CustomerController {
 
        
         customerServiceProducerEvent.createCustomerEvent(_customer);
+        
         return new ResponseEntity<>(_customer, httpHeaders, HttpStatus.CREATED);
     }
 }

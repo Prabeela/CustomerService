@@ -22,7 +22,7 @@ public class RabbitConfig {
     @Bean
     public RabbitTemplate template() {
         RabbitTemplate rabbitTemplate = new RabbitTemplate(this.connectionFactory);
-        rabbitTemplate.setRoutingKey("spring-boot");
+        rabbitTemplate.setRoutingKey("spring-boot-customer-541455");
         rabbitTemplate.setMessageConverter(new Jackson2JsonMessageConverter());
         return rabbitTemplate;
     }

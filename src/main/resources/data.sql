@@ -1,3 +1,3 @@
-insert into customer(id,email,first_name,last_name,created,modified) values('66921076-ed1d-458b-9d7d-ce9a227d64a5','s.frg@email.com','lima','rose','2016-07-31','2016-07-31');
-insert into customer(id,email,first_name,last_name,created,modified) values('4465afe0-4e8f-4779-90e3-e6b971c4cc7d','lok.frg@email.com','teena','purple','2016-08-21','2016-09-21');
-insert into customer(id,email,first_name,last_name,created,modified) values('842c4bd0-32a0-4c6e-8f7a-74c45c23ddf1','hem.frg@email.com','dona','white','2016-06-11','2016-07-31');
+insert into customer_541455(id,email,first_name,last_name,created,modified) values('66921076-ed1d-458b-9d7d-ce9a227d64a5','s.frg@email.com','lima','rose','2016-07-31','2016-07-31');
+insert into customer_541455(id,email,first_name,last_name,created,modified) values('4465afe0-4e8f-4779-90e3-e6b971c4cc7d','lok.frg@email.com','teena','purple','2016-08-21','2016-09-21');
+insert into customer_541455(id,email,first_name,last_name,created,modified) values('842c4bd0-32a0-4c6e-8f7a-74c45c23ddf1','hem.frg@email.com','dona','white','2016-06-11','2016-07-31');

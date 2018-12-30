@@ -19,9 +19,9 @@ public class CustomerRepository {
 
 	private final JdbcTemplate jdbcTemplate;
 
-    private final String SQL_INSERT = "insert into customer(id,email,first_name,last_name,created,modified) values(?,?,?,?,?,?)";
-    private final String SQL_QUERY_ALL = "select * from customer";
-    private final String SQL_QUERY_BY_ID = "select * from customer where id=?";
+    private final String SQL_INSERT = "insert into customer_541455(id,email,first_name,last_name,created,modified) values(?,?,?,?,?,?)";
+    private final String SQL_QUERY_ALL = "select * from customer_541455";
+    private final String SQL_QUERY_BY_ID = "select * from customer_541455 where id=?";
 
     private final RowMapper<Customer> rowMapper = (ResultSet rs, int row) -> {
         Customer customer = new Customer();

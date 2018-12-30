@@ -3,7 +3,7 @@ server:
   
 spring:
   application:
-    name: customer-service-541455
+    name: 541455-customer-service
     
 security:
   basic:
@@ -13,8 +13,4 @@ management:
   security:
     enabled: false
     
-logging: # <----New sections below
-  level:
-    com:
-      microservices: DEBUG
       
